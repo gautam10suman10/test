@@ -1,0 +1,17 @@
+steps:
+
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: bash
+  args: ['gcloud', 'compute', 'ssh', 'auto-test', '--zone=ZONE', '--internal-ip']
+
+# - name: node:14
+#   entrypoint: npm
+#   args: ['run', 'build:app']
+
+# - name: node:14
+#   entrypoint: ls
+
+# artifacts:
+#   objects:
+#     location: 'gs://time-keeper-website-dev/'
+#     paths: ['build/*']
